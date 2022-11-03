@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Lev3_3_projekt_js-vertiefung_kalorien-rechner</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <form id="form">
+        <fieldset>
+          <legend><h1>Kalorien-Rechner</h1></legend>
+          <label for="input-height">Körpergröße</label>
+          <input
+            type="number"
+            name="input-height"
+            id="input-height"
+            placeholder="Bitte Körpergröße in cm eingeben:"
+            min="0"
+            max="220"
+            required />
+          <label for="input-age">Alter</label>
+          <input
+            type="number"
+            name="input-age"
+            id="input-age"
+            placeholder="Bitte Alter eingeben:"
+            min="1"
+            max="100"
+            required />
+          <label for="input-age">Gewicht</label>
+          <input
+            type="number"
+            name="input-weight"
+            id="input-weight"
+            placeholder="Bitte Gewicht in kg eingeben:"
+            min="1"
+            max="200"
+            required />
+          <fieldset>
+            <legend>Körperbau</legend>
+            <div>
+              <input type="radio" name="input-radio" id="input-radio-female" required />
+              <label for="input-radio-female">Weiblich</label>
+            </div>
+            <div>
+              <input type="radio" name="input-radio" id="input-radio-male" required />
+              <label for="input-radio-male">Männlich</label>
+            </div>
+          </fieldset>
+          <label for="input-select-activity">Arbeits- und Freizeitaktivität</label>
+          <select name="input-select-activity" id="input-select-activity">
+            <option value="0.95">Schlafen</option>
+            <option value="1.2" selected>Nur Sitzen oder Liegen</option>
+            <option value="1.5">
+              Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der
+              Freizeit, z.B. Büroarbeit
+            </option>
+            <option value="1.7">
+              Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende,
+              Fließbandarbeiter, Laboranten, Kraftfahrer
+            </option>
+            <option value="1.9">
+              Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker,
+              Mechaniker, Hausfrauen
+            </option>
+            <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+          </select>
+          <button type="submit" id="submit-btn">Submit</button>
+          <table>
+            <tr>
+              <th></th>
+              <th>kcal</th>
+              <th>kJ</th>
+            </tr>
+            <tr>
+              <td>Grundumsatz</td>
+              <td id="grundumsatz-kcal">- - -</td>
+              <td id="grundumsatz-kj">- - -</td>
+            </tr>
+            <tr>
+              <td>Gesamtumsatz</td>
+              <td id="gesamtumsatz-kcal">- - -</td>
+              <td id="gesamtumsatz-kj">- - -</td>
+            </tr>
+          </table>
+          <p>
+            Das Ergebnis des Rechners sollten Sie als Orientierungswert ansehen, da es verschiedene
+            Fehlermöglichkeiten gibt, wie abweichender Grundumsatz, falsche Zeiteinschätzung, etc.
+          </p>
+        </fieldset>
+      </form>
+    </main>
+    <footer></footer>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
