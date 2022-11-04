@@ -48,8 +48,7 @@ form > fieldset {
 legend {
   font-size: 1.8rem;
   font-weight: bold;
-  margin-bottom: 1rem;
-  color: var(--grey-2);
+  margin: 1rem 0;
 }
 form > fieldset > legend {
   text-align: center;
@@ -80,16 +79,9 @@ input:focus {
 input::placeholder {
   color: var(--grey-5);
 }
-select {
-  font-size: 1.6rem;
-  width: 100%;
-  border-radius: 1rem;
-  padding: 0.25rem 1rem;
-  color: var(--grey-5);
-}
 input[type="submit"] {
   font-size: 1.6rem;
-  color: var(--blue-10);
+  color: white;
   background-color: var(--blue-2);
   border: 1px solid var(--blue-4);
   border-radius: 1rem;
@@ -98,6 +90,16 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   background-color: var(--blue-1);
+}
+input[id="input-weight"] {
+  margin-bottom: 1rem;
+}
+select {
+  font-size: 1.6rem;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 0.25rem 1rem;
+  color: var(--grey-5);
 }
 table {
   border-spacing: 0.3rem;
