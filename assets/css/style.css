@@ -87,9 +87,6 @@ select {
   padding: 0.25rem 1rem;
   color: var(--grey-5);
 }
-select > option > * {
-  background-color: yellow;
-}
 button {
   font-size: 1.6rem;
   color: var(--blue-10);
