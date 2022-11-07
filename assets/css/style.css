@@ -130,6 +130,7 @@ td:nth-last-of-type(-n + 2) {
   text-align: center;
   color: var(--grey-0);
   background-color: var(--blue-2);
+  width: 25%;
 }
 tr:last-of-type > td:first-of-type {
   border-radius: 0 0 0 1rem;
